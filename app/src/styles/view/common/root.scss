@@ -1,0 +1,15 @@
+$fonts: ("Lato", 'Regular', 400),
+        ("PTSans", 'Bold', 700),
+        ("PTSans", 'Italic', 400),
+        ("PTSans", 'Regular', 400);
+
+
+@each $name,
+$sub-name,
+$w in $fonts {
+    @font-face {
+        font-family: $name+'-'+$sub-name;
+        src: url(../../../fonts/#{$name}-#{$sub-name}.woff2);
+        font-weight: $w;
+    }
+}

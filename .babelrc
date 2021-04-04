@@ -1,0 +1,17 @@
+{
+    "comments": false,
+    "presets": [
+        "@babel/preset-env",
+        [
+            "minify",
+            {
+                "builtIns":true,
+                "evaluate": true,
+                "mangle":true
+            }
+        ]
+    ],
+    "ignore": [
+        "app/src/script/libs/"
+    ]
+}
